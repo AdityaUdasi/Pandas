@@ -28,6 +28,9 @@ df = df.astype(schema)
 ## Change DataType
 df['height'] = df['height'].astype(int)
 
+## passing column name separatly
+df.columns = ['name' , 'age' , 'city, 'height']
+
 ## column rename
 df = df.rename(columns={'name': 'Name'})
 
